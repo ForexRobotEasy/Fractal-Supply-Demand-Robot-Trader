@@ -1,0 +1,66 @@
+mql5
+//+------------------------------------------------------------------+
+//|                                           Fractal Supply Demand  |
+//|                                                         Robot Trader |
+//|                                                      forexroboteasy.com |
+//|                                                      Forex Robot Easy Team |
+//+------------------------------------------------------------------+
+
+#include <Trade\Trade.mqh>
+
+//+------------------------------------------------------------------+
+//|                                                   Global variables |
+//+------------------------------------------------------------------+
+input double RiskPercent = 2.0; // Risk percentage per trade
+input double StopLossPercent = 1.0; // Stop loss percentage
+input double TakeProfitPercent = 2.0; // Take profit percentage
+
+//+------------------------------------------------------------------+
+//|                                                    OnTick handler |
+//+------------------------------------------------------------------+
+void OnTick()
+{
+   // Check for key rotation zones
+   if (IsKeyRotationZone())
+   {
+      // Execute trading strategy
+      ExecuteStrategy();
+   }
+}
+
+//+------------------------------------------------------------------+
+//|                                                     Check rotation zones |
+//+------------------------------------------------------------------+
+bool IsKeyRotationZone()
+{
+   // Add logic to determine if current price is within a key rotation zone
+   // Return true if within rotation zone, false otherwise
+}
+
+//+------------------------------------------------------------------+
+//|                                                      Execute strategy |
+//+------------------------------------------------------------------+
+void ExecuteStrategy()
+{
+   // Add logic to identify supply and demand zones
+   // Add logic to identify support and resistance levels
+   // Add logic to execute buy/sell orders at discount/premium prices
+   // Add logic for risk management and portfolio trading
+}
+
+//+------------------------------------------------------------------+
+//|                                                      Initialization |
+//+------------------------------------------------------------------+
+int OnInit()
+{
+   // Add initialization code here
+}
+
+//+------------------------------------------------------------------+
+//|                                                      Deinitialization |
+//+------------------------------------------------------------------+
+void OnDeinit(const int reason)
+{
+   // Add deinitialization code here
+}
+
